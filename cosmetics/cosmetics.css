@@ -1,0 +1,123 @@
+*{
+
+ margin: 0;
+}
+.photo{
+
+  background-image: url(Background.jpg);
+  background-size: cover;
+  opacity:0.5;
+  position:absolute; 
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 159vh;
+  background-attachment: fixed;
+}
+.mimo{
+ padding-left: 20px;
+ font-family: 'Charmonman', cursive;
+ color: #ba55d3;
+ font-size: 35px;
+
+}
+
+#cosmetics{
+ font-family: 'Charmonman', cursive;
+ font-size: 30px;
+ color: #530066;
+}
+.form{
+margin-left: 10%;
+margin-right: 10%;
+ border: solid  #530066 3px;
+ border-radius: 5%;
+
+}
+fieldset{
+
+ border: solid #b397ba 3px;
+ border-radius: 20%;
+}
+input:not([type="radio"]){
+ padding: 10px;
+ margin-left:13%;
+ width: 75%;
+}
+select{
+ padding: 12px;
+ margin-left:13%;
+ width: 77%;
+}
+legend{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td, th {
+  border: 2px solid  #530066;
+  text-align: left;
+  border-radius: 5%;
+}
+#tableau{
+  width: 89%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+
+#button3{
+color: #530066;
+  background-color: #b397ba;
+}
+
+#submit{
+  margin-left: 130px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(116, 116, 116, 0.19);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-top: 3%;
+  margin-bottom: 3%;
+    display: block;
+    font-size: 16px;
+    width: 20%;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+button{
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(116, 116, 116, 0.19);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+    font-size: 16px;
+  border-radius: 10px;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+    color: #530066;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 475px){
+  #prix{
+    display: none;
+  }
+  #tableau{
+    width: 80%;
+    margin-left: 0%;
+  }
+  table{
+    width: 40%;
+  }
+  th{
+    padding: 0px;
+  }
+ 
+  
+}

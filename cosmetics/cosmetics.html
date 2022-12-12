@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="cosmetics.css">
+
+ <title>Cosmetics</title>
+</head>
+<body>
+<span class="mimo">MIMO'S  </span><span id="cosmetics">shop</span>
+ <div class="photo"></div>
+
+<div class="form">
+
+   <fieldset>
+     <legend for="nom">Nom</legend>
+   <input type="text" id="nom">
+   <p id="error-1"></p>
+   </fieldset>
+<fieldset>
+ <legend>Marque</legend>
+  <label for="marques"></label>
+  <select name="marques" id="marque">
+  <option disabled selected value>marque</option>
+   <option value="Tarte">Tarte</option>
+   <option value="Dior">Dior</option>
+   <option value="Anastasia Beverly"> Anastasia Beverly</option>
+   <option value="Absolute New York">Absolute New York</option>
+   <option value="Charlotte Tilbury">Charlotte Tilbury</option>
+   <option value="Fenty Beauty">Fenty Beauty</option>
+   <option value="Morphe">Morphe</option>
+   <option value="The Ordinary">The Ordinary</option>
+   <option value="Clinique">Clinique</option>
+   <option value="Coco and Eve">Coco and Eve</option>
+</select>
+<p id="error-5"></p>
+
+ </fieldset>
+  <fieldset>
+   <legend for="prix">Prix</legend>
+ <input type="number" id="prix">
+ <p id="error-3"></p>
+ </fieldset>
+ <fieldset>
+  <legend for="date">Date</legend>
+<input type="date" id="date">
+<p id="error-4"></p>
+</fieldset>
+<fieldset>
+ <legend>Types</legend>
+<label for="types" name ></label>
+ <select name="types" id="Type" >
+  <option disabled selected value>types</option>
+ <option value="Hygiène et toilette">Hygiène et toilette</option>
+ <option value="Soins esthétiques">Soins esthétiques</option>
+ <option value="Produits solaires">Produits solaires</option>
+ <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+ <option value=" Produits de maquillage">Produits de maquillage</option>
+ <option value="Entretien capillaires">Entretien capillaires</option>
+ <option value="Parfums">Parfums</option>
+ </select>
+ <p id="error-2"></p>
+
+</fieldset>
+<fieldset >
+ <legend>Y'a t'il une promotion?</legend>
+ <div class="promotion-radio">
+  <label class="help-bl" for="">Promotion :</label>
+  <label class="help-radio" for="">Oui :</label>
+  <input name="radio"  value="oui"  type="radio" id="radioPromotion1">
+  <label class="help-radio" for="">Non :</label>
+  <input name="radio" value="Non" type="radio" id="radioPromotion2">
+  <p id="cate"></p>
+<p id="error-6"></p>
+</div>
+
+</div>
+</fieldset>
+<button  id="submit" onclick="valider()">Create</button>
+
+<div id="tableau">
+<table id="table">
+ <tr>
+     <th>Nom</th>
+     <th>Marque</th>
+     <th id="prix">Prix</th>
+     <th>Date</th>
+     <th>Type</th>
+     <th>promo?</th>
+     <th >Actions</th>
+
+ </tr>
+ <tbody id="tbody">
+
+ </tbody>
+</table> 
+</div>
+<script src="cosmetics.js"></script>
+</body>
+</html>
